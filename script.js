@@ -1,7 +1,41 @@
 let firstOperand = "";
 let secondOperand = "";
 let operator = "";
+currentInput = "";
 let zoneOfCounting = document.getElementById("zoneOfCounting");
+
+document.addEventListener("keydown", function(event) {
+    let key = event.key;
+    console.log("Нажата клавиша:", event.key);
+
+    if (!isNaN(key)) {
+        addDigit(key);
+    }
+
+    if (key === "+" || key === "-" || key === "*" || key === "/") {
+        setOperator(key);
+    }
+
+    if (key === "Enter" || key === "=") {
+        calculate();
+    }
+
+    if (key === "Backspace") {
+        backspace();
+    }
+
+    if (key === ".") {
+        addDot()
+    }
+
+    if (key === "%") {
+        applyPercent()
+    }
+
+    if (key.toLowerCase() === "c") {
+        clearAll();
+    }
+});
 
 function addDigit(digit) {
     if (operator === "") {
