@@ -6,7 +6,7 @@ Created for [The Odin Project Foundations](https://www.theodinproject.com/paths/
 This project helps practice event handling, logic building, and styling a small web app.
 
 ## 🖼️ Live Preview
-👉 [View on GitHub Pages]((https://euglightened.github.io/Calculator/))
+👉 [View on GitHub Pages](https://euglightened.github.io/Calculator/)
 <!-- Replace "your-username" -->
 
 ## 🛠️ Built With
